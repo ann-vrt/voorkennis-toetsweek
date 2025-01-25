@@ -1,0 +1,128 @@
+
+/* website bijwerkingen */
+
+body 
+{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #333333;
+    padding: 15px;
+
+    display: flex;
+    justify-content: center;
+    border-bottom: 6px solid #555555;
+}
+
+/* menubalk */
+
+.menubalk
+{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.balk-knop a 
+{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 5px;
+    transition: background-color 0.3s ease;
+}
+
+.balk-knop
+{
+    position: relative;
+}
+
+.balk-knop:not(:last-child)::after 
+{
+    content: '|';
+    position: absolute;
+    right: -15px;
+    color: #888888;
+}
+
+/* homepagina inleiding */
+
+.inleiding 
+{
+    padding: 50px;
+    text-align: center;
+}
+
+.klein-knoppen 
+{
+    margin-top: 30px;
+}
+
+.klein-knop 
+{
+    background-color: #333333;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 15px 30px;
+    text-decoration: none;
+}
+
+.klein-knop:hover
+{
+    box-shadow: 0 2px 6px #0000005A;
+    transform: translateY(-1px);
+}
+
+/* hoofdstukken */
+
+.voorkennis 
+{
+    background-color: #f5f5f5;
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.hoofdstukken 
+{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.hoofdstuk-knop 
+{
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px #0000001A;
+    color: #000000;
+    font-weight: bold;
+
+    display: block;
+    padding: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: all 0.3s;
+}
+
+.hoofdstuk-knop:hover 
+{
+    box-shadow: 0 2px 6px #0000005A;
+    transform: translateY(-2px);
+}
+
+/* footer voor uiterlijk */
+
+footer 
+{
+    background-color: #333333;
+    padding: 10px 0;
+}
